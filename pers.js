@@ -315,7 +315,7 @@ function getCoatRarity(horse, m) {
 						percent = Number($('#table-0 strong.nowrap', html).eq(i).text().replace('%', '')); break;
 					}
 				}
-				if (percent < 6) {coatRarity = ' ' + percent + '%';}
+				if (percent =< 100) {coatRarity = ' ' + percent + '%';}
 				else {coatRarity = '';}
 				formRewriteData(horse, m);
 			});
