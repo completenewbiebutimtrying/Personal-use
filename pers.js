@@ -339,7 +339,7 @@ function getCoatRarity(horse, m) {
 					pNum = Number(percent.replace('%', ''));
 				}
 			}
-			if (pNum < 6) {coatRarity = ' ' + pNum + '%';}
+			if (pNum =< 100) {coatRarity = ' ' + pNum + '%';}
 			else {coatRarity = '';}
 			formRewriteData(horse.split(',')[2].toString(), m);
 		});
